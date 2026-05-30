@@ -1,0 +1,240 @@
+/* ===============================================================  ADATTAMENTO A TABLET    ==================================================*/
+
+@media (min-width: 768px) and (max-width: 959px) {
+
+  .contenitore, .contenitore-nrincammino {
+    margin: 15% 0 15% 0;
+    grid-template-columns: 1fr;   
+    justify-items: start;       
+  }
+
+ .immagine, .testo .testolargo {
+    grid-column: 1;
+    justify-self: center;  
+    max-width: 100%; 
+  }
+
+  .contenitore .boxform {
+    max-width: 100%;             
+  }
+
+    .contenitore p, ul, .contenitore-nrincammino p, ul {
+      font-size: 1em;
+      max-width: 100%;
+    text-align: left;  
+    }
+
+
+    .contenitore h2, .contenitore-nrincammino h2 {
+        font-size: 2em;
+    }
+
+    #sidemenu {
+        width: 10px;
+        padding:5px;
+    }
+
+    #sidemenu a {
+        font-size: 1.5em;
+    }
+
+    #sidemenu li {
+        margin:20px 0;
+    }
+
+     .hero {
+    height: 70vh;       
+  }
+
+  header h1 {
+    font-size: 3em;     
+    position: sticky;
+  }
+
+  .hero .domanda {
+    font-size: 1.2em;   
+    padding: 0 10px;    
+  }
+
+   
+
+  .frecciaindietro {
+    width: 15px;
+    padding: 7px;
+    font-size: 1.7em;
+  }
+      
+
+.disegnooggetto {
+  width: 150px;
+}
+
+.nomeoggetto {
+  font-size: 1 ;
+}
+
+.nomeoggetto input[type="checkbox"] {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+
+    #foo {
+    padding: 10px;
+    font-size: 0.9em; /* più piccolo */
+  }
+
+}
+
+
+
+/* ===============================================================  ADATTAMENTO A SMARTPHONE    ==================================================*/
+
+@media (max-width: 767px) {
+  
+  
+    html, body {
+      overflow-x: auto;
+    }
+
+  .contenitore h2 {
+      font-size: 2em;
+      line-height: 1em;
+  }
+
+  .contenitore, .contenitore-nrincammino {
+    margin: 15% 0 15% 0;
+    padding: 0px;
+    grid-template-columns: 1fr;   
+    justify-items: start;       
+  }
+
+  .contenitore {
+    flex-direction: column;
+    }
+  
+
+   .testo, .immagine, .testolargo {
+    grid-column: 1;
+    
+  }
+    .contenitore h3 {
+        font-size: 1.2em;
+    }
+
+   .hero {
+    height: 50vh;     
+  }
+
+  header h1 {
+    font-size: 2.2em;
+  }
+
+  .hero .domanda {
+    font-size: 1em;
+  }
+
+  .griglia-oggetti {
+    grid-template-columns: 1fr; 
+  }
+
+
+#sidemenu, .frecciaindietro {
+    display: none;
+  }
+
+.nomeoggetto {
+  font-size: 0.8em;
+}
+
+.introduzione {
+    font-size: 1em;
+  }
+    
+  .contenitore p, ul, .contenitore-nrincammino p {
+    font-size: 0.8em;
+    max-width: 100%;
+    text-align: left;  
+  }
+  
+
+  .contenitore .boxform {
+    max-width: 100%;             
+  }
+
+  .contenitore h2, .contenitore-nrincammino h2 {
+    font-size: 1.7em;
+    line-height: 1em;
+  }
+
+  .contenitore h3, .contenitore-nrincammino h3 {
+    font-size: 1em;
+   }
+
+  .contenitore .boxform {
+    max-width: 100%;             
+  }
+
+  .hero {
+    height: 50vh;       
+  }
+
+  header h1 {
+    font-size: 2.2em;
+  }
+
+  .hero .domanda {
+    font-size: 1em;
+  }
+
+  .disegnooggetto {
+    width: 100px;
+  }
+
+  .nomeoggetto {
+    font-size: 0.8em;
+  }
+
+  .nomeoggetto input[type="checkbox"] {
+    width: 7px;
+    height: 7px;
+    cursor: pointer;
+  }
+
+   .menu {
+      display: none;          
+      flex-direction: column;
+      width: 100%;
+      background: white;
+      position: absolute;
+      top: 80px;             
+      left: 0;
+      padding: 10px 0;
+      gap: 10px;
+    }
+
+    #menu-toggle:checked + .hamburger + .menu {
+      display: flex;         
+    }
+
+    .hamburger {
+      display: block;        
+    }
+
+    .menu a {
+      justify-content: flex-start;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+
+
+
+  #foo {
+    padding: 8px;
+    font-size: 0.8em; 
+  }
+  }
+
+
+
+

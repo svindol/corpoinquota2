@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="icon" href="illustrazioni/icona-corpoinquota.png" type="image/png">
+        <title> Zaino e carico | Corpoinquota </title>
+        <link rel="stylesheet" href="fogli-esterni/style.css">
+        <link rel="stylesheet" href="fogli-esterni/responsive.css">
+    </head>
+    <body>
+        <nav id="barranavigazione">
+            <a href="index.html "><img id="logo" src="illustrazioni/logo-corpoinquota.svg"></a>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">☰</label>
+            <div class="menu">
+                <a href="index.html ">HOME</a>
+                <a href="Corpo in quota.html">CORPO IN QUOTA</a>
+                <a href="Zaino e carico.html" style="color: #5C809B; font-weight: 800;">ZAINO E CARICO</a>
+                <a href="Salita e fatica.html">SALITA E FATICA</a>
+                <a href="Numeri in cammino.html">NUMERI IN CAMMINO</a>
+                <a href="Leggere la montagna.html">LEGGERE LA MONTAGNA</a>
+            </div>
+        </nav>
+        <header class="hero" style="background-image:url(disegni-hero/hero\ zaino\ e\ carico\ .svg);" alt="Immagine hero Zaino e carico"> 
+            <h1>ZAINO E CARICO</h1>
+            <p class="domanda">Quanto peso si può portare senza farsi male?</p>
+        </header>  
+        <main>
+            <div class="introduzione"> 
+                <p>Un <em>corpo in quota</em> non è mai solo, porta sulle spalle lo <span class="markblue">zaino:</span> dimora, dispensa e scrigno itinerante durante i giorni di avventura e cammino. 
+                Un carico ben distribuito previene dolori e affaticamento, migliora la stabilità e permette di risparmiare energia. 
+                Per questo è fondamentale sapere quanto peso portare e dove sistemarlo, rispettando i limiti del corpo. </p>       
+            </div>
+            <section class="contenitore">
+                <div class="testo">
+                    <h2 id="distribuzionepeso">La distribuzione del peso</h2>
+                    <p>La disposizione degli oggetti all'interno dello zaino può fare la differenza tra un'escursione confortevole e una faticosa:
+                        <strong>un carico ben bilanciato non solo facilita il movimento, ma migliora anche l'efficienza del cammino.</strong> <br>
+                        Innanzitutto, <strong>il centro di gravità dello zaino deve essere vicino al corpo</strong> e, se possibile, all’altezza delle spalle, così che 
+                        il carico sia sempre al di sopra del centro di gravità del corpo e non tiri all’indietro quando indossato. Gli oggetti più pesanti,
+                        come riserve di cibo, borracce o eventuale attrezzatura tecnica, vanno dunque riposti vicino alla schiena. Si consiglia di riporre invece
+                        nella <strong>parte centrale</strong> vestiti e attrezzatura da cucina, in quanto di peso medio e non necessitanti di un pronto uso. Gli articoli più leggeri,
+                        come il sacco a pelo o piumini, andrebbero messi nella <strong>parte inferiore</strong> dello zaino, mentre oggetti piccoli, leggeri e di uso frequente nella 
+                        <strong>sezione superiore</strong>.<br> <br>
+                        <span class="mark">RIASSUNTO VISIVO</span> <span class="azione">Quali oggetti mettere nelle diverse sezioni dello zaino? Scoprilo scorrendo sui pallini bianchi.</span>
+                    </p>
+                </div>
+                <div class="img-hotspots" aria-label="Distribuzione del peso nello zaino">
+                    <button class="hotspot" style="top: 14%; left: 50%;" data-label="Leggeri" aria-label="Oggetti leggeri"></button>
+                    <button class="hotspot" style="top: 43%; left: 54%;" data-label="Medi" aria-label="Oggetti medi"></button>
+                    <button class="hotspot" style="top: 78%; left: 59%;" data-label="Leggeri" aria-label="Oggetti pesanti"></button>
+                    <button class="hotspot" style="top: 52%; left: 45%;" data-label="Pesanti" aria-label="Oggetti pesanti"></button>
+                </div>
+            </section>
+            <section class="contenitore">
+                <div class="testo">
+                    <h2 id="quantopeso">Quanto può pesare lo zaino?</h2>
+                    <p>
+                        Capita spesso che nei trekking di più giorni lo zaino superi i 15 kg, talvolta avvicinandosi anche ai 20. 
+                        Eppure la regola di base è chiara: <strong> il peso dello zaino non dovrebbe superare il 10–20% del proprio peso corporeo</strong>.<br>
+                        Questa direttiva può far pensare che alle persone minute siano preclusi i viaggi di più giorni, perché il loro scarso peso corporeo limiterebbe il peso e quindi il contenuto dello zaino. Eppure non è così, perché entrano in gioco due fattori: <strong>l’allenamento e l’abitudine a portare peso</strong>. 
+                        Può sembrare strano, ma <strong>caricarsi</strong> (purché in modo corretto e rispettoso della colonna vertebrale) <strong>è una pratica utile per rinforzare la muscolatura e le ossa</strong>, tanto da <strong>ridurre il rischio di sviluppare, in tarda età, l’osteoporosi.</strong>
+                        Quindi il consiglio, per tutte le persone minute e apparentemente fragili, è di intraprendere un percorso di allenamento, portando zaini inizialmente poco pesanti, aumentando gradualmente il peso, di pari passo con la lunghezza e i dislivelli delle escursioni. <br>Resta importante per tutti, però,
+                        monitorare il peso del proprio zaino, in modo da non superare la soglia massima. Un bagaglio eccessivo grava su schiena, colonna vertebrale e muscolatura, <strong>compromettendo la postura e causando disturbi muscoloscheletrici.</strong> Per pesarlo, si può salire sulla bilancia di casa indossando lo zaino, per poi 
+                        sottrarre il peso “al netto”.   
+                    </p>
+                </div>
+                <div class="boxform">
+                        <p>
+                            <span class="mark"> CALCOLA</span>  <span class="azione">il peso massimo del tuo zaino</span>
+                        </p>
+                        <form id="pesozaino"></form>
+                        <label for="peso"> Quanto pesi? </label>
+                        <input type="number" id="peso" name="peso" size="1" step="0.1" min="10" class="input-peso"> kg <br>
+                        <input type="button" value="Scopri quanto può pesare il tuo zaino" onclick="PesoZaino()"/>
+                     <br>
+                    <p id="risultato"></p> <br>
+                       <p>
+                        <span class="mark">SCOPRI</span>   <span class="azione">se il tuo zaino rispetta questo limite</span></p>
+                        <br>  <a href="#frecciaform" class="freccia">&#8595;</a>
+                  
+                </div>
+            </section>
+            <section class="contenitore">
+            <div id="contenitore-formoggetti">
+                <p id="frecciaform"><span class="mark">SELEZIONA</span> <span class="azione"> gli oggetti presenti nel tuo zaino:</span></p>
+                <form id="OggettiZaino" class="griglia-oggetti">
+<!--oggetti-->      <div class="oggetto">
+                        <div class="nomeoggetto">
+                        <label>
+                            <img class="disegnooggetto" src="Oggetti zaino/macchina fotografica.svg" alt="Macchina fotografica" style="width: 200px;">
+                            <input type="checkbox" name="oggetto" value="1.2" onchange="calcolaPeso()">
+                            Macchina fotografica
+                        </label>
+                        </div>
+                    </div>
+                    <div class="oggetto">
+                            <img class="disegnooggetto" src="Oggetti zaino/borraccia.svg" style="width: 130px;" alt="Borraccia">
+                        <div class="nomeoggetto">
+                        <label>
+                            <input type="checkbox" name="oggetto" value="0.5" onchange="calcolaPeso()">
+                            Borraccia in plastica o alluminio
+                        </label>
+                        <label>
+                            <input type="checkbox" name="oggetto" value="0.35" onchange="calcolaPeso()">
+                            Borraccia termica
+                        </label>
+                        <label>
+                            Acqua (litri): 
+                            <input type="number" id="acqua" name="acqua" step="0.5" min="0" value="0" onchange="calcolaPeso()"> 
+                        </label>
+                        </div>
+                    </div>
+                    <div class="oggetto">
+                        <img class="disegnooggetto" src="Oggetti zaino/sacco a pelo.svg" alt="Sacco a pelo">
+                            <div class="nomeoggetto">
+                            <label>
+                                <input type="checkbox" name="oggetto" value="1" onchange="calcolaPeso()">
+                                Sacco a pelo
+                            </label>
+                            <label>
+                                <input type="checkbox" name="oggetto" value="0.5" onchange="calcolaPeso()">
+                                Materassino
+                            </label>
+                            <label>
+                                <input type="checkbox" name="oggetto" value="2" onchange="calcolaPeso()">
+                                Tenda
+                            </label>
+                        </div>
+                    </div>
+                    <div class="oggetto">
+                        <img class="disegnooggetto" src="Oggetti zaino/fornelletto.svg" alt="Fornelletto da campeggio">
+                        <div class="nomeoggetto">
+                        <label>
+                            <input type="checkbox" name="oggetto" value="0.3" onchange="calcolaPeso()">
+                            Fornelletto da campeggio
+                        </label> 
+                        <label>
+                            <input type="checkbox" name="oggetto" value="0.4" onchange="calcolaPeso()">
+                            Bombola di gas
+                        </label>
+                    </div>
+                    </div>
+                    <div class="oggetto">
+                        <img class="disegnooggetto" src="Oggetti zaino/powerbank.svg" alt="Powerbank">
+                        <div class="nomeoggetto">
+                            <label>
+                                <input type="checkbox" name="oggetto" value="0.3" onchange="calcolaPeso()">
+                            Powerbank e cavi
+                        </label>
+                        </div>
+                    </div>
+                    <div class="oggetto">
+                        <img class="disegnooggetto" src="Oggetti zaino/frontalino.svg" alt="Frontalino">
+                            <div class="nomeoggetto">
+                            <label>
+                                <input type="checkbox" name="oggetto" value="0.1" onchange="calcolaPeso()">
+                                Frontalino
+                            </label>
+                            <label>
+                                <input type="checkbox" name="oggetto" value="0.2" onchange="calcolaPeso()">
+                                Kit di pronto soccorso
+                            </label>
+                        </div>
+                    </div>
+                    <div class="oggetto">
+                        <img class="disegnooggetto" src="Oggetti zaino/giacca.svg" alt="Giacca">
+                        <div class="nomeoggetto">
+                            <label>
+                                <input type="checkbox" name="oggetto" value="0.3" onchange="calcolaPeso()">
+                                Giacca
+                        </label>
+                        <label>
+                            <input type="checkbox" name="oggetto" value="0.3" onchange="calcolaPeso()">
+                            Pile
+                        </label>
+                        <label>
+                                <input type="checkbox" name="oggetto" value="0.8" onchange="calcolaPeso()">
+                            Cambio vestiti e biancheria
+                        </label>
+                        </div>
+                    </div>
+                    <div class="oggetto">
+                        <img class="disegnooggetto" src="Oggetti zaino/infradito.svg" alt="Ciabatte">
+                        <div class="nomeoggetto">
+                            <label>
+                                <input type="checkbox" name="oggetto" value="0.2" onchange="calcolaPeso()">
+                                Ciabatte
+                        </label>
+                        <label>
+                            <input type="checkbox" name="oggetto" value="0.6" onchange="calcolaPeso()">
+                            Scarpe leggere
+                        </label>
+                        </div>
+                    </div>
+                    </form>
+            </div>
+            <div id="risultato-peso">
+                
+                <h3 class="totale">
+                   <span class="azione">Peso effettivo del tuo zaino:</span>
+                <span id="pesoTotale">2</span> kg</h3>
+                
+                <p style="font-size: 0.9em; font-style: italic;">(Prendendo come riferimento uno zaino da trekking medio da 40/50 litri)</p>
+                <button type="button" onclick="pulisciForm()">Pulisci</button>
+                </div>
+            </section>
+            </main>
+        <nav id="sidemenu">
+            <p class="azione">  IN QUESTA PAGINA:  </p>
+            <ul>
+                <li><a href="#distribuzionepeso">1</a></li>
+                <li><a href="#quantopeso">2</a></li>
+            </ul>
+            </nav>
+        <footer id="foo"> &copy; Silvia Pandolfini - 2025 | <em>&#64;svindol</em></footer>
+    <script src="fogli-esterni/script.js"></script>
+    </body>
+</html>
+
+
+

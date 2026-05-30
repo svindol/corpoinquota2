@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="icon" href="illustrazioni/icona-corpoinquota.png" type="image/png">
+      <title>L'algoritmo di Dijkstra | Corpoinquota</title>
+      <link rel="stylesheet" href="fogli-esterni/style.css" />
+      <link rel="stylesheet" href="fogli-esterni/responsive.css">
+    </head> 
+    <nav id="barranavigazione">
+      <a href="index.html "><img id="logo" src="illustrazioni/logo-corpoinquota.svg"></a>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="hamburger">☰</label>
+      <div class="menu"> 
+        <a href="index.html ">HOME</a>
+        <a href="Corpo in quota.html">CORPO IN QUOTA</a>
+        <a href="Zaino e carico.html">ZAINO E CARICO</a>
+        <a href="Salita e fatica.html">SALITA E FATICA</a>
+        <a href="Numeri in cammino.html" style="color:  #5c809b; font-weight: 800;">NUMERI IN CAMMINO</a>
+        <a href="Leggere la montagna.html">LEGGERE LA MONTAGNA</a>
+    </div>
+    </nav>
+      <body>
+         <a href="javascript:history.back()" class="frecciaindietro">&larr;</a>
+        <main>
+            <section class="contenitore-nrincammino">
+            
+<h2>L'algoritmo dei "cammini minimi"</h2>
+  <div class="introduzione">
+                        <p><em>"Ho progettato il tutto senza carta e penna. In questo modo, sei quasi forzato a evitare ogni inutile complessità"</em>. Così, in venti minuti, 
+                          è stato elaborato uno degli algoritmi più importanti dell'informatica: un metodo capace di calcolare il percorso minimo, che sia tra collegamenti 
+                          informatici che collegamenti stradali.
+                         </p>
+                    </div>
+                <div class="testo">
+                    <p>
+                    E' utilizzato dai GPS per calcolare la strada più breve, ma può essere applicato in qualsiasi contesto in cui sia necessario trovare il percorso più breve tra due punti, dati i costi dei collegamenti.<br>
+                    <span class="markblue">L'algoritmo di Dijkstra </span> è stato inventato da <strong>Edsger Dijkstra</strong>, informatico olandese, nel 1959. <br>
+                    Formalmente, <span class="underline">permette di trovare il cammino minimo tra un nodo sorgente e tutti gli altri nodi in un grafo con pesi non negativi sugli archi.</span>
+                    Nella vita di tutti i giorni, ci permette di selezionare la strada più breve, meno trafficata o consigliata per raggiungere una meta (o una cima!).
+                    </p>
+                    <h3>Cosa sono i grafi</h3>
+                    <p>I <span class="markblue">grafi </span>sono <span class="underline">strutture di dati usate per rappresentare connessioni tra coppie di elementi.</span>
+                      Questi <em>elementi</em> sono detti <strong>nodi</strong> o vertici, e possono rappresentare oggetti della vita reale, come città, oggetti o persone, mentre le <em>connessioni</em> vengono chiamate <strong>archi</strong>. 
+                      I grafi sono appunto le connessioni tra nodi e archi. <br>
+                      Portando un esempio reale, in una rete di trasporto i nodi rappresentano le strutture che inviano o ricevono dei prodotti e gli archi le strade o i percorsi che le collegano.
+                      I grafi possono essere <strong>orientati</strong> o <strong>non orientati</strong>. Sono orientati quando se per ogni coppia di nodi connessi puoi muoverti da un nodo all'altro 
+                      soltanto in una verso specifico (in questo caso si usano tfrecce, invece di semplici linee), mentre si definiscono non orientati se per ogni coppia di nodi connessi
+                      puoi andare da un nodo all'altro in entrambi i versi.<br>
+                      Altra distinzione, cruciale per il funzionamento dell'algoritmo di Dijkstra, sono i <strong>grafi pesati</strong>. <span class="underline">Agli archi di questi grafi
+                    è associato un <em>peso</em> o un <em>costo</em></span>, che può essere una distanza così come un tempo.
+                    </p>
+<figure class="immagine">
+                      <img src="Immagini/grafi-orientati.png" >
+                    </figure>
+                    <h3>L'algoritmo e il suo funzionamento</h3>
+                    <p>L'algoritmo di Dijkstra funziona <strong>soltanto con grafi che hanno pesi positivi</strong>. Questo perché, durante il processo, i pesi degli archi vengono sommati per trovare il cammino minimo.
+
+Se nel grafo è presente un peso negativo, l'algoritmo non funzionerà adeguatamente. Una volta che un nodo viene segnato come "visitato", il percorso attuale per quel nodo viene indicato come il più breve per raggiungerlo. Un peso negativo può alterare il processo se il peso totale viene ridotto dopo questo step.
+Il procedimento inizia dal nodo sorgente, quello scelto come punto di partenza, e calcola progressivamente la distanza minima per raggiungere tutti gli altri nodi del grafo.
+
+In particolare, l’algoritmo mantiene per ogni nodo il valore della distanza minima conosciuta dal nodo sorgente. Se viene trovato un percorso più breve, questo valore viene aggiornato.
+Quando la distanza minima per un nodo è stata determinata in modo definitivo, quel nodo viene segnato come “visitato” e non viene più modificato.
+
+Il processo prosegue finché tutti i nodi sono stati visitati. Alla fine si ottiene la distanza minima (e il relativo percorso) dal nodo sorgente a ciascun altro nodo del grafo.
+<br>Un algoritmo di Dijkstra può essere utilizzato per determinare il percorso più breve o meno impegnativo tra due punti in montagna, come un rifugio e una vetta. 
+</p>
+
+
+
+
+                   
+                </div>
+ 
+            </section>
+        </main>
+        
+    <footer id="foo"> &copy; Silvia Pandolfini - 2025 | <em>&#64;svindol</em></footer>
+  </body>
+</html>
